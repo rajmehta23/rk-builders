@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RK BUILDERS | Luxury Architecture & Premium Residential Construction</title>
+  <meta name="description" content="RK BUILDERS is a luxury architecture and construction firm specializing in bespoke modern homes, villas, premium apartments, and state-of-the-art residential developments.">
+  
+  <!-- Premium Typography: Outfit for Headings, Inter for Body -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Full-Screen Preloader -->
+  <div id="preloader" aria-label="Loading site assets">
+    <div class="preloader-content">
+      <!-- Animated Architectural Line Drawing Motif -->
+      <svg class="preloader-logo" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Modernist Geometric Drawing of R and K -->
+        <path class="wireframe-path path-r" d="M20,80 L20,20 L55,20 C65,20 70,25 70,35 C70,45 65,50 55,50 L20,50 M50,50 L75,80" stroke="#C8A97E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path class="wireframe-path path-k" d="M80,20 L80,80 M80,50 L55,20 M80,50 L55,80" stroke="#C8A97E" stroke-width="1.5" stroke-dasharray="4 4" stroke-linecap="round"/>
+        <rect class="wireframe-grid" x="10" y="10" width="80" height="80" stroke="#1F1F1F" stroke-width="0.5" stroke-opacity="0.1"/>
+        <circle cx="20" cy="20" r="1.5" fill="#C8A97E"/>
+        <circle cx="70" cy="35" r="1.5" fill="#C8A97E"/>
+        <circle cx="75" cy="80" r="1.5" fill="#C8A97E"/>
+      </svg>
+      <h1 class="preloader-brand">RK BUILDERS</h1>
+      <p class="preloader-subtitle">ENGINEERING LUXURY</p>
+      
+      <!-- Progress Bar and Percentage -->
+      <div class="preloader-progress-container">
+        <div id="preloader-progress-bar" class="preloader-progress-bar"></div>
+      </div>
+      <div id="preloader-percentage" class="preloader-percentage">0%</div>
+    </div>
+  </div>
+
+  <!-- Sticky Premium Navigation Bar -->
+  <header id="main-header">
+    <nav class="nav-container" aria-label="Main Navigation">
+      <a href="#hero" class="nav-logo" id="logo-link">
+        <span class="logo-text">RK <span class="accent-text">BUILDERS</span></span>
+      </a>
+      
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#projects-overview" class="nav-link">Projects</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#process-section" class="nav-link">Process</a></li>
+        <li><a href="#gallery-section" class="nav-link">Gallery</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      
+      <div class="nav-actions">
+        <a href="#contact" class="cta-button-nav">Get in Touch</a>
+        <!-- Responsive Hamburger Menu -->
+        <button class="hamburger-menu" id="menu-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+          <span class="hamburger-line line-1"></span>
+          <span class="hamburger-line line-2"></span>
+          <span class="hamburger-line line-3"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section: Architectural Scrollytelling Canvas -->
+    <section id="hero" class="hero-scrollytelling">
+      <!-- High height container to control scroll progress -->
+      <div class="hero-scroll-trigger" id="hero-scroll-container">
+        <!-- Sticky viewport wrapper for canvas -->
+        <div class="hero-sticky-viewport">
+          <canvas id="hero-canvas"></canvas>
+          
+          <!-- Story Panels Overlay -->
+          <div class="story-panels-container" id="story-panels">
+            <div class="story-panel" id="panel-1" data-frame-start="0" data-frame-end="45">
+              <div class="story-card story-card-left glassmorphic">
+                <span class="panel-tag">Phase 01</span>
+                <h2>Every great home begins with a strong foundation.</h2>
+              </div>
+              <div class="story-card story-card-right glassmorphic">
+                <p>Precision-excavated structures designed to anchor generations of memories in premium luxury.</p>
+              </div>
+            </div>
+            <div class="story-panel" id="panel-2" data-frame-start="45" data-frame-end="105">
+              <div class="story-card story-card-left glassmorphic">
+                <span class="panel-tag">Phase 02</span>
+                <h2>Precision-engineered structural columns.</h2>
+              </div>
+              <div class="story-card story-card-right glassmorphic">
+                <p>Reinforced framework designed for open-concept architecture and breathtaking double-height volumes.</p>
+              </div>
+            </div>
+            <div class="story-panel" id="panel-3" data-frame-start="105" data-frame-end="165">
+              <div class="story-card story-card-left glassmorphic">
+                <span class="panel-tag">Phase 03</span>
+                <h2>Cantilevered beams and floor plates.</h2>
+              </div>
+              <div class="story-card story-card-right glassmorphic">
+                <p>Sleek floor profiles providing expansive horizontal lines and unobstructed panoramic views.</p>
+              </div>
+            </div>
+            <div class="story-panel" id="panel-4" data-frame-start="165" data-frame-end="225">
+              <div class="story-card story-card-left glassmorphic">
+                <span class="panel-tag">Phase 04</span>
+                <h2>Glass façade and premium curtain walls.</h2>
+              </div>
+              <div class="story-card story-card-right glassmorphic">
+                <p>High-performance thermal glass systems merging the natural landscape seamlessly with custom interiors.</p>
+              </div>
+            </div>
+            <div class="story-panel" id="panel-5" data-frame-start="225" data-frame-end="300">
+              <div class="story-card story-card-left glassmorphic">
+                <span class="panel-tag">Phase 05</span>
+                <h2>The finished luxury residence.</h2>
+              </div>
+              <div class="story-card story-card-right glassmorphic">
+                <p>An architectural masterpiece executed with curated materials, clean minimalism, and flawless craftsmanship.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hotspots Overlay (Only visible in exploded view phase: frames 230-300) -->
+          <div class="hotspots-overlay-container" id="hotspots-container">
+            <!-- Smart Lighting Hotspot -->
+            <div class="hotspot" id="hotspot-lighting" data-orig-x="360" data-orig-y="350" data-active-start="230" data-active-end="300">
+              <button class="hotspot-trigger" aria-label="Smart Lighting Info">
+                <span class="hotspot-dot"></span>
+              </button>
+              <div class="hotspot-card glassmorphic">
+                <h3>Smart Ambient Lighting</h3>
+                <p>Fully integrated Lutron circadian systems regulating light temperature and intensity dynamically.</p>
+              </div>
+            </div>
+
+            <!-- Energy Systems Hotspot -->
+            <div class="hotspot" id="hotspot-energy" data-orig-x="180" data-orig-y="650" data-active-start="230" data-active-end="300">
+              <button class="hotspot-trigger" aria-label="Energy Systems Info">
+                <span class="hotspot-dot"></span>
+              </button>
+              <div class="hotspot-card glassmorphic">
+                <h3>Geothermal & Solar HVAC</h3>
+                <p>High-efficiency concealed climate systems utilizing sub-slab cooling loops and integrated solar tiles.</p>
+              </div>
+            </div>
+
+            <!-- Structural Core Hotspot -->
+            <div class="hotspot" id="hotspot-core" data-orig-x="360" data-orig-y="850" data-active-start="230" data-active-end="300">
+              <button class="hotspot-trigger" aria-label="Structural Core Info">
+                <span class="hotspot-dot"></span>
+              </button>
+              <div class="hotspot-card glassmorphic">
+                <h3>Reinforced Core</h3>
+                <p>Ultra-high-performance concrete structure with sound-attenuating core walls for acoustic insulation.</p>
+              </div>
+            </div>
+
+            <!-- Premium Materials Hotspot -->
+            <div class="hotspot" id="hotspot-materials" data-orig-x="500" data-orig-y="500" data-active-start="230" data-active-end="300">
+              <button class="hotspot-trigger" aria-label="Premium Materials Info">
+                <span class="hotspot-dot"></span>
+              </button>
+              <div class="hotspot-card glassmorphic">
+                <h3>Architectural Bronze & Teak</h3>
+                <p>Triple-coated bronze accents paired with marine-grade sustainable teak cladding for longevity.</p>
+              </div>
+            </div>
+
+            <!-- Sustainable Design Hotspot -->
+            <div class="hotspot" id="hotspot-eco" data-orig-x="360" data-orig-y="100" data-active-start="230" data-active-end="300">
+              <button class="hotspot-trigger" aria-label="Sustainable Design Info">
+                <span class="hotspot-dot"></span>
+              </button>
+              <div class="hotspot-card glassmorphic">
+                <h3>Green Roof & Water Harvesting</h3>
+                <p>Extensive sedum roof with custom greywater filtration and irrigation systems built into the parapet.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Bento Grid Section -->
+    <section id="projects-overview" class="services-bento-section">
+      <div class="section-header container">
+        <span class="section-tag">Portfolio & Offerings</span>
+        <h2 class="section-title">Architectural Mastery Across Scale</h2>
+        <p class="section-subtitle">We design and execute custom residential projects, from sprawling suburban estates to ultra-luxury penthouses.</p>
+      </div>
+
+      <div class="bento-grid container">
+        <!-- Card 1: Luxury Villas (Large Column and Row) -->
+        <div class="bento-card card-large" id="bento-villas">
+          <div class="bento-card-bg" style="background-image: url('bottom section/villa_dusk.png');"></div>
+          <div class="bento-card-overlay"></div>
+          <div class="bento-card-content">
+            <span class="bento-tag">Signature Estates</span>
+            <h3 class="bento-card-title">Luxury Villas</h3>
+            <p class="bento-card-desc">Bespoke sprawling estates incorporating integrated wellness wings, private pavilions, and infinity waterscapes.</p>
+            <a href="#gallery-section" class="bento-link">Explore Villas <span class="arrow">→</span></a>
+          </div>
+          <div class="glow-overlay"></div>
+        </div>
+
+        <!-- Card 2: Modern Apartments -->
+        <div class="bento-card card-medium" id="bento-apartments">
+          <div class="bento-card-bg" style="background-image: url('bottom section/glass_apartment.png');"></div>
+          <div class="bento-card-overlay"></div>
+          <div class="bento-card-content">
+            <span class="bento-tag">Vertical Living</span>
+            <h3 class="bento-card-title">Modern Apartments</h3>
+            <p class="bento-card-desc">Premium high-rise penthouses featuring expansive private terraces, glass curtain-walls, and bespoke automation.</p>
+            <a href="#gallery-section" class="bento-link">Explore Penthouses <span class="arrow">→</span></a>
+          </div>
+          <div class="glow-overlay"></div>
+        </div>
+
+        <!-- Card 3: Custom Homes -->
+        <div class="bento-card card-medium" id="bento-custom">
+          <div class="bento-card-bg" style="background-image: url('bottom section/concrete_house.png');"></div>
+          <div class="bento-card-overlay"></div>
+          <div class="bento-card-content">
+            <span class="bento-tag">Bespoke Residence</span>
+            <h3 class="bento-card-title">Custom Homes</h3>
+            <p class="bento-card-desc">Residential concepts tailored completely to personal lifestyle, detailed spatial planning, and natural lighting.</p>
+            <a href="#gallery-section" class="bento-link">Explore Homes <span class="arrow">→</span></a>
+          </div>
+          <div class="glow-overlay"></div>
+        </div>
+
+        <!-- Card 4: Interior Design -->
+        <div class="bento-card card-small" id="bento-interiors">
+          <div class="bento-card-bg" style="background-image: url('bottom section/interior_living.png');"></div>
+          <div class="bento-card-overlay"></div>
+          <div class="bento-card-content">
+            <span class="bento-tag">Curation</span>
+            <h3 class="bento-card-title">Interior Design</h3>
+            <p class="bento-card-desc">Premium curated spaces detailing luxury finishes, bespoke joinery, and custom furniture curation.</p>
+          </div>
+          <div class="glow-overlay"></div>
+        </div>
+
+        <!-- Card 5: Renovation -->
+        <div class="bento-card card-small" id="bento-renovations">
+          <div class="bento-card-bg" style="background-image: url('bottom section/minimal_kitchen.png');"></div>
+          <div class="bento-card-overlay"></div>
+          <div class="bento-card-content">
+            <span class="bento-tag">Restoration</span>
+            <h3 class="bento-card-title">Premium Renovations</h3>
+            <p class="bento-card-desc">Adapting existing architectural volumes to contemporary high-performance engineering standards.</p>
+          </div>
+          <div class="glow-overlay"></div>
+        </div>
+
+        <!-- Card 6: Turnkey Projects -->
+        <div class="bento-card card-wide" id="bento-turnkey">
+          <div class="bento-card-content">
+            <span class="bento-tag">End-to-End Service</span>
+            <h3 class="bento-card-title">Turnkey Residential Solutions</h3>
+            <p class="bento-card-desc">Full lifecycle management from land acquisition, architectural drawings, engineering design, structural excavation, interior styling, to final handover.</p>
+            <div class="bento-stats">
+              <div class="stat-item"><span class="stat-num">15+</span><span class="stat-label">Years of Luxury Craft</span></div>
+              <div class="stat-item"><span class="stat-num">120+</span><span class="stat-label">Homes Handed Over</span></div>
+              <div class="stat-item"><span class="stat-num">100%</span><span class="stat-label">Client Trust Score</span></div>
+            </div>
+          </div>
+          <div class="glow-overlay"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About RK BUILDERS Section (Split layout with Interactive Lights) -->
+    <section id="about" class="about-section">
+      <div class="container split-about-container">
+        <!-- Left side: Narrative -->
+        <div class="about-text-column">
+          <span class="section-tag">Our Philosophy</span>
+          <h2 class="section-title">We craft spaces that transcend time.</h2>
+          <p class="lead-text">For over fifteen years, RK BUILDERS has engineered bespoke residential architectures that stand as testaments to minimalist luxury, precision engineering, and sophisticated details.</p>
+          
+          <p class="body-text">We believe luxury is not about excess, but the perfect refinement of details, materials, and light. By blending concrete structural expression with natural teak and architectural bronze, we design homes that feel like private sanctuaries.</p>
+
+          <div class="values-list">
+            <div class="value-item">
+              <h4 class="value-title"><span class="highlight-bullet"></span>Uncompromising Precision</h4>
+              <p class="value-desc">Working down to millimeter accuracy in structural construction and joinery.</p>
+            </div>
+            <div class="value-item">
+              <h4 class="value-title"><span class="highlight-bullet"></span>Honest Materials</h4>
+              <p class="value-desc">Using sustainable timber, natural stone, and structural metal that age gracefully.</p>
+            </div>
+            <div class="value-item">
+              <h4 class="value-title"><span class="highlight-bullet"></span>Environmental Synergy</h4>
+              <p class="value-desc">Integrating solar roof arrays, geothermal heating, and low-energy facades.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right side: Interactive Image View (with Glowing Lights) -->
+        <div class="about-interactive-column">
+          <div class="interactive-image-wrapper" id="about-interactive-container">
+            <canvas id="about-canvas"></canvas>
+            
+            <!-- Custom HTML overlays for individual window glows using CSS clip-paths -->
+            <div class="window-glow-zone" id="window-zone-1" style="clip-path: polygon(30% 45%, 45% 45%, 45% 65%, 30% 65%);" aria-label="Hover to illuminate lower study"></div>
+            <div class="window-glow-zone" id="window-zone-2" style="clip-path: polygon(55% 45%, 70% 45%, 70% 65%, 55% 65%);" aria-label="Hover to illuminate dining hall"></div>
+            <div class="window-glow-zone" id="window-zone-3" style="clip-path: polygon(42% 18%, 58% 18%, 58% 38%, 42% 38%);" aria-label="Hover to illuminate master bedroom"></div>
+            
+            <!-- Loading Indicator for Light room sequence -->
+            <div class="about-canvas-loader" id="about-canvas-loader" aria-hidden="true">
+              <div class="spinner"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Timeline Section (Horizontal scrolling) -->
+    <section id="process-section" class="process-scroll-container">
+      <div class="process-scroll-trigger" id="process-scroll-container-height">
+        <!-- Sticky 100vh frame -->
+        <div class="process-sticky-wrapper">
+          <div class="process-header container">
+            <div class="header-split">
+              <div>
+                <span class="section-tag text-light">Execution Roadmap</span>
+                <h2 class="section-title text-light">Our Architectural Process</h2>
+              </div>
+              <p class="process-intro">From the first spark of inspiration to the keys of your custom sanctuary, our workflow ensures seamless design-build integrity.</p>
+            </div>
+          </div>
+
+          <!-- Horizontal track translating left based on scroll progress -->
+          <div class="process-horizontal-track" id="process-track">
+            <!-- Step 1 -->
+            <div class="process-step">
+              <div class="step-num">01</div>
+              <div class="step-content glassmorphic">
+                <h3>Consultation</h3>
+                <p>We explore your lifestyle requirements, spatial aspirations, site topography, and material preferences to define the project outline.</p>
+                <ul class="step-details">
+                  <li>Client lifestyle audit</li>
+                  <li>Topographical analysis</li>
+                  <li>Preliminary feasibility review</li>
+                </ul>
+              </div>
+            </div>
+            
+            <!-- Step 2 -->
+            <div class="process-step">
+              <div class="step-num">02</div>
+              <div class="step-content glassmorphic">
+                <h3>Architectural Design</h3>
+                <p>Our architects compose initial spatial layouts, layouts focusing on volume and light, and structural concepts using modern 3D visualizations.</p>
+                <ul class="step-details">
+                  <li>Spatial zoning diagrams</li>
+                  <li>3D architectural renderings</li>
+                  <li>Initial material selections</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="process-step">
+              <div class="step-num">03</div>
+              <div class="step-content glassmorphic">
+                <h3>Engineering & Planning</h3>
+                <p>Developing precise construction documentation, building permit submittals, energy performance calculations, and detailed bill of materials.</p>
+                <ul class="step-details">
+                  <li>Structural calculations</li>
+                  <li>Concealed MEP design</li>
+                  <li>Permit & regulatory approvals</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="process-step">
+              <div class="step-num">04</div>
+              <div class="step-content glassmorphic">
+                <h3>Construction Phase</h3>
+                <p>Ground excavation, structural core column casting, masonry slab execution, facade glass panel hoisting, under supervision of site engineers.</p>
+                <ul class="step-details">
+                  <li>Site supervisor oversight</li>
+                  <li>Millimeter-tolerance column casting</li>
+                  <li>Thermal envelope sealing</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Step 5 -->
+            <div class="process-step">
+              <div class="step-num">05</div>
+              <div class="step-content glassmorphic">
+                <h3>Quality Assurance</h3>
+                <p>Rigorous verification of building seal, testing of home automation matrices, acoustic inspections, and premium joinery detailing checks.</p>
+                <ul class="step-details">
+                  <li>Blower door envelope test</li>
+                  <li>MEP systems stress-testing</li>
+                  <li>Finishing audits</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Step 6 -->
+            <div class="process-step">
+              <div class="step-num">06</div>
+              <div class="step-content glassmorphic">
+                <h3>Handover</h3>
+                <p>We deliver your bespoke home, complete with comprehensive documentation of systems, warranties, and architectural build records.</p>
+                <ul class="step-details">
+                  <li>Digital home guide</li>
+                  <li>Systems tutorial walk-through</li>
+                  <li>Lifetime structural warranty</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Progress bar indicator at bottom of sticky -->
+          <div class="process-bar-track container">
+            <div class="process-bar-indicator" id="process-scroll-bar"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Gallery Section (Masonry grid with filter and lightbox) -->
+    <section id="gallery-section" class="gallery-section-wrapper">
+      <div class="section-header container">
+        <span class="section-tag">Visual Archives</span>
+        <h2 class="section-title">Built Legacies</h2>
+        <div class="gallery-filters" id="gallery-filter-buttons">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="villas">Luxury Villas</button>
+          <button class="filter-btn" data-filter="apartments">Apartments</button>
+          <button class="filter-btn" data-filter="interiors">Interiors</button>
+        </div>
+      </div>
+
+      <!-- Masonry Grid -->
+      <div class="gallery-masonry container" id="masonry-grid">
+        <!-- Item 1: Villa (Villas) -->
+        <div class="gallery-item villas" data-category="villas" id="gal-item-1">
+          <div class="gallery-item-inner">
+            <img src="bottom section/villa_dusk.png" alt="RK Builders Luxury Villa Dusk Showcase" loading="lazy">
+            <div class="gallery-item-hover">
+              <span class="gallery-item-category">Luxury Villa</span>
+              <h3 class="gallery-item-title">Elysian Pavilions</h3>
+              <p class="gallery-item-meta">Alibaug, 2025</p>
+              <button class="gallery-zoom-trigger" aria-label="Zoom image">Expand View</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2: Apartment (Apartments) -->
+        <div class="gallery-item apartments" data-category="apartments" id="gal-item-2">
+          <div class="gallery-item-inner">
+            <img src="bottom section/glass_apartment.png" alt="Sleek glass penthouse tower view" loading="lazy">
+            <div class="gallery-item-hover">
+              <span class="gallery-item-category">Penthouse</span>
+              <h3 class="gallery-item-title">The Glass Spire</h3>
+              <p class="gallery-item-meta">Mumbai, 2026</p>
+              <button class="gallery-zoom-trigger" aria-label="Zoom image">Expand View</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3: Interior Living (Interiors) -->
+        <div class="gallery-item interiors" data-category="interiors" id="gal-item-3">
+          <div class="gallery-item-inner">
+            <img src="bottom section/interior_living.png" alt="Premium modern living room interior design" loading="lazy">
+            <div class="gallery-item-hover">
+              <span class="gallery-item-category">Residential Interior</span>
+              <h3 class="gallery-item-title">Minimalist Sanctuary</h3>
+              <p class="gallery-item-meta">Bangalore, 2024</p>
+              <button class="gallery-zoom-trigger" aria-label="Zoom image">Expand View</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 4: Concrete House (Villas) -->
+        <div class="gallery-item villas" data-category="villas" id="gal-item-4">
+          <div class="gallery-item-inner">
+            <img src="bottom section/concrete_house.png" alt="Architectural concrete house exterior view" loading="lazy">
+            <div class="gallery-item-hover">
+              <span class="gallery-item-category">Custom Estate</span>
+              <h3 class="gallery-item-title">Brutalist Zen House</h3>
+              <p class="gallery-item-meta">Pune, 2025</p>
+              <button class="gallery-zoom-trigger" aria-label="Zoom image">Expand View</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 5: Kitchen Interior (Interiors) -->
+        <div class="gallery-item interiors" data-category="interiors" id="gal-item-5">
+          <div class="gallery-item-inner">
+            <img src="bottom section/minimal_kitchen.png" alt="Luxury minimal kitchen with dark marble island" loading="lazy">
+            <div class="gallery-item-hover">
+              <span class="gallery-item-category">Kitchen Interior</span>
+              <h3 class="gallery-item-title">Obsidian Culinary Suite</h3>
+              <p class="gallery-item-meta">Delhi NCR, 2025</p>
+              <button class="gallery-zoom-trigger" aria-label="Zoom image">Expand View</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lightbox Preview Component -->
+      <div id="gallery-lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-label="Image gallery zoom view">
+        <button class="lightbox-close" id="lightbox-close-btn" aria-label="Close zoom view">&times;</button>
+        <button class="lightbox-nav prev" id="lightbox-prev-btn" aria-label="Previous image">&#10094;</button>
+        <button class="lightbox-nav next" id="lightbox-next-btn" aria-label="Next image">&#10095;</button>
+        <div class="lightbox-content">
+          <img id="lightbox-img" src="" alt="">
+          <div class="lightbox-caption">
+            <span id="lightbox-category" class="lightbox-cap-cat">Category</span>
+            <h3 id="lightbox-title" class="lightbox-cap-title">Title</h3>
+            <p id="lightbox-meta" class="lightbox-cap-meta">Location, Year</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom Section: Dual Filmstrip Architecture Reel -->
+    <section id="architecture-reel" class="filmstrip-section">
+      <div class="filmstrip-title container">
+        <span class="section-tag">Cinematic Archive</span>
+        <h2 class="section-title">The Architecture Reel</h2>
+      </div>
+      
+      <div class="filmstrip-container">
+        <!-- Row 1: Left-to-Right Loop -->
+        <div class="filmstrip-row row-ltr" aria-hidden="true">
+          <div class="filmstrip-track animate-ltr">
+            <!-- 5 unique images duplicate to loop seamlessly -->
+            <div class="filmstrip-item"><img src="bottom section/villa_dusk.png" alt="Architecture reel villa"></div>
+            <div class="filmstrip-item"><img src="bottom section/interior_living.png" alt="Architecture reel living room"></div>
+            <div class="filmstrip-item"><img src="bottom section/glass_apartment.png" alt="Architecture reel apartment"></div>
+            <div class="filmstrip-item"><img src="bottom section/concrete_house.png" alt="Architecture reel concrete house"></div>
+            <div class="filmstrip-item"><img src="bottom section/minimal_kitchen.png" alt="Architecture reel kitchen"></div>
+            <!-- Duplicates -->
+            <div class="filmstrip-item"><img src="bottom section/villa_dusk.png" alt="Architecture reel villa duplicate"></div>
+            <div class="filmstrip-item"><img src="bottom section/interior_living.png" alt="Architecture reel living room duplicate"></div>
+            <div class="filmstrip-item"><img src="bottom section/glass_apartment.png" alt="Architecture reel apartment duplicate"></div>
+            <div class="filmstrip-item"><img src="bottom section/concrete_house.png" alt="Architecture reel concrete house duplicate"></div>
+            <div class="filmstrip-item"><img src="bottom section/minimal_kitchen.png" alt="Architecture reel kitchen duplicate"></div>
+          </div>
+        </div>
+
+        <!-- Row 2: Right-to-Left Loop -->
+        <div class="filmstrip-row row-rtl" aria-hidden="true">
+          <div class="filmstrip-track animate-rtl">
+            <!-- Same/different image sequence in reverse direction -->
+            <div class="filmstrip-item"><img src="bottom section/concrete_house.png" alt="Architecture reel concrete house"></div>
+            <div class="filmstrip-item"><img src="bottom section/minimal_kitchen.png" alt="Architecture reel kitchen"></div>
+            <div class="filmstrip-item"><img src="bottom section/villa_dusk.png" alt="Architecture reel villa"></div>
+            <div class="filmstrip-item"><img src="bottom section/interior_living.png" alt="Architecture reel living room"></div>
+            <div class="filmstrip-item"><img src="bottom section/glass_apartment.png" alt="Architecture reel apartment"></div>
+            <!-- Duplicates -->
+            <div class="filmstrip-item"><img src="bottom section/concrete_house.png" alt="Architecture reel concrete house duplicate"></div>
+            <div class="filmstrip-item"><img src="bottom section/minimal_kitchen.png" alt="Architecture reel kitchen duplicate"></div>
+            <div class="filmstrip-item"><img src="bottom section/villa_dusk.png" alt="Architecture reel villa duplicate"></div>
+            <div class="filmstrip-item"><img src="bottom section/interior_living.png" alt="Architecture reel living room duplicate"></div>
+            <div class="filmstrip-item"><img src="bottom section/glass_apartment.png" alt="Architecture reel apartment duplicate"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact / CTA Section -->
+    <section id="contact" class="contact-section-wrapper">
+      <div class="container contact-grid">
+        <!-- Contact Information -->
+        <div class="contact-info-column">
+          <span class="section-tag">Contact Us</span>
+          <h2 class="section-title">Let's Build Your Vision.</h2>
+          <p class="contact-lead">Have a site, draft drawings, or an idea? Connect with our premium project consultants to bring your custom sanctuary to life.</p>
+          
+          <div class="contact-channels">
+            <div class="channel-item">
+              <span class="channel-icon">&#128383;</span>
+              <div>
+                <span class="channel-label">Office Headquarters</span>
+                <a href="https://maps.google.com" target="_blank" rel="noopener" class="channel-value">RK Tower, New Pataliputra Colony, Patna, India</a>
+              </div>
+            </div>
+            
+            <div class="channel-item">
+              <span class="channel-icon">&#128379;</span>
+              <div>
+                <span class="channel-label">Direct Project Inquiry</span>
+                <a href="tel:+91911316644" class="channel-value">+91 911316644</a>
+              </div>
+            </div>
+
+            <div class="channel-item">
+              <span class="channel-icon">&#9993;</span>
+              <div>
+                <span class="channel-label">Electronic Mail</span>
+                <a href="mailto:build@rkbuilders.com" class="channel-value">build@rkbuilders.com</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="office-hours">
+            <h4>Inquiry Timings</h4>
+            <p>Monday – Friday: 9:00 AM – 6:00 PM IST</p>
+            <p>Saturday: 10:00 AM – 2:00 PM IST (Prior appointments only)</p>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-column glassmorphic" id="contact-form-container">
+          <form id="rk-contact-form" action="#" method="POST" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-name">Your Name *</label>
+                <input type="text" id="contact-name" name="name" required placeholder="e.g. Rajnish Mehta" aria-required="true">
+                <span class="form-error-msg" id="name-error">Please enter your name.</span>
+              </div>
+              <div class="form-group">
+                <label for="contact-email">Email Address *</label>
+                <input type="email" id="contact-email" name="email" required placeholder="e.g. rajnish@example.com" aria-required="true">
+                <span class="form-error-msg" id="email-error">Please enter a valid email address.</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-phone">Phone Number</label>
+              <input type="tel" id="contact-phone" name="phone" placeholder="e.g. +91 98765 43210">
+            </div>
+
+            <div class="form-group">
+              <label for="contact-project-type">Project Typology *</label>
+              <select id="contact-project-type" name="projectType" required aria-required="true">
+                <option value="" disabled selected>Select a typology...</option>
+                <option value="luxury-villa">Luxury Villa Estate</option>
+                <option value="apartment-renovation">Premium Penthouse / Apartment</option>
+                <option value="custom-home">Custom Suburban Residence</option>
+                <option value="commercial-turnkey">Turnkey Design-Build Project</option>
+              </select>
+              <span class="form-error-msg" id="type-error">Please select a typology.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message">Design Aspiration & Details *</label>
+              <textarea id="contact-message" name="message" rows="5" required placeholder="Describe your dream home, architectural preferences, materials, location..." aria-required="true"></textarea>
+              <span class="form-error-msg" id="message-error">Please describe your design details.</span>
+            </div>
+
+            <div class="form-privacy-consent">
+              <input type="checkbox" id="contact-privacy" name="privacy" required aria-required="true">
+              <label for="contact-privacy">I consent to RK BUILDERS storing my data to process my inquiry. *</label>
+              <span class="form-error-msg" id="privacy-error">Consent is required to submit.</span>
+            </div>
+
+            <button type="submit" class="submit-btn-cta" id="form-submit-button">
+              <span>Initiate Consultation</span>
+              <span class="btn-arrow">→</span>
+            </button>
+          </form>
+
+          <!-- Form Success State Overlay -->
+          <div class="form-success-overlay" id="form-success-overlay" aria-hidden="true">
+            <div class="success-message-content">
+              <span class="success-icon">&#10004;</span>
+              <h3>Consultation Initiated</h3>
+              <p>Thank you for connecting. Our principal luxury design consultant will call you within 24 business hours.</p>
+              <button class="reset-form-btn" id="success-reset-btn">Send Another Inquiry</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-wrapper">
+    <div class="container footer-grid">
+      <div class="footer-brand-info">
+        <span class="footer-logo">RK <span class="accent-text">BUILDERS</span></span>
+        <p class="footer-tagline">Architectural precision. Curated materials. Exceptional craftsmanship. Est. 2011.</p>
+      </div>
+      
+      <div class="footer-links-group">
+        <h4>Firm</h4>
+        <ul>
+          <li><a href="#about">Our Story</a></li>
+          <li><a href="#projects-overview">Expertise</a></li>
+          <li><a href="#process-section">Roadmap</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-group">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Structural Warranty</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-group">
+        <h4>Social</h4>
+        <ul>
+          <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://pinterest.com" target="_blank" rel="noopener">Pinterest</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 RK BUILDERS Ltd. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>

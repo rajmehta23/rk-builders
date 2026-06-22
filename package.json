@@ -1,0 +1,12 @@
+{
+  "name": "rk-builders",
+  "version": "1.0.0",
+  "description": "RK Builders - Luxury Architecture & Premium Residential Construction website",
+  "scripts": {
+    "dev": "npx vite --host",
+    "build": "vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
